@@ -50,7 +50,6 @@ public class Odd extends AppCompatActivity {
         btnBackToWelcome = (Button) findViewById(R.id.buttonBackToWelcome);
         Log.d(TAG, "now running: onCreate"); //Use logCat to review the Activity Lifecycle.
 
-
         //Press the "Done" button to go to OddResultActivity.
         btnGo.setOnClickListener(new View.OnClickListener() {
                                      @Override
