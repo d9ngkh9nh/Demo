@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khanhdang.demo.TruthOrDare">
+
+    <Button
+        android:id="@+id/buttonBackToWelcome"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Main menu"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="#55a383"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/buttonTruth"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/buttonBackToWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Truth"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        android:background="#4454b4"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <TextView
+        android:id="@+id/textViewOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonTruth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="OR"
+        android:textSize="50dp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <Button
+        android:id="@+id/buttonDare"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@+id/buttonTruth"
+        android:layout_below="@+id/textViewOr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:background="#FF5733"
+        android:text="Dare"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khanhdang.demo.MainActivity"
+    android:background="@drawable/weirdo"
+    >
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Enter your name..."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="italic"
+
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <EditText
+        android:id="@+id/editTextSurName"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:hint="Enter your surname..."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+
+    <CheckBox
+        android:id="@+id/checkBoxMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="100dp"
+        android:checked="false"
+        android:text="Male"
+        android:textSize="30dp"
+        android:textColor="#BB8FCE"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxFeMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/checkBoxMale"
+        android:layout_alignBottom="@+id/checkBoxMale"
+        android:layout_alignEnd="@+id/editTextName"
+        android:layout_alignRight="@+id/editTextName"
+        android:checked="false"
+        android:text="Female"
+        android:textSize="30dp"
+        android:textColor="#F1948A"/>
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/done"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="182dp" />
+</RelativeLayout>

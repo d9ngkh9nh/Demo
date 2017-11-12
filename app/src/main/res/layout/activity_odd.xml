@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khanhdang.demo.Odd">
+
+    <Button
+        android:id="@+id/buttonBackToWelcome"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Main menu"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="#55a383"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <TextView
+        android:id="@+id/textViewIntroOdd"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBackToWelcome"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Tick the boxes that you are and get the prediction" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBackToWelcome"
+        android:layout_alignLeft="@id/checkBoxMale"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="110dp"
+        android:checked="false"
+        android:text="Female"
+        android:textSize="25dp"
+        android:textColor="#F1948A" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMale"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBackToWelcome"
+        android:layout_marginTop="110dp"
+        android:layout_alignLeft="@+id/buttonBackToWelcome"
+        android:layout_alignStart="@+id/buttonBackToWelcome"
+        android:checked="false"
+        android:text="Male"
+        android:textSize="25dp"
+        android:textColor="#BB8FCE"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxOld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxFemale"
+        android:layout_marginTop="230dp"
+        android:checked="false"
+        android:text="30+ Y.O."
+        android:textSize="25dp"
+        android:textColor="#85C1E9"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxYoung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_alignLeft="@+id/buttonBackToWelcome"
+        android:checked="false"
+        android:text="30- Y.O."
+        android:textSize="25dp"
+        android:textColor="#73C6B6"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_alignLeft="@+id/buttonBackToWelcome"
+        android:checked="false"
+        android:text="Cat Lover"
+        android:textSize="25dp"
+        android:textColor="#82E0AA"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxFemale"
+        android:layout_marginTop="290dp"
+        android:checked="false"
+        android:text="Dog Lover"
+        android:textSize="25dp"
+        android:textColor="#F8C471"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxIntrovert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_alignLeft="@+id/buttonBackToWelcome"
+        android:checked="false"
+        android:text="You are an Introvert Person"
+        android:textSize="25dp"
+        android:textColor="#E59866"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:layout_alignLeft="@+id/buttonBackToWelcome"
+        android:checked="false"
+        android:text="You are an Active Person"
+        android:textSize="25dp"
+        android:textColor="#B2BABB"/>
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/done"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+</RelativeLayout>
